@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mothu Properties | Secure Land for Families</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+    header {
+      background-color: white;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    header h1, header p {
+      color: #2d6a4f;
+      margin: 0;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      padding: 10px;
+      background-color: #2d6a4f;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hero {
+      background: url('images/family-here1.png') no-repeat center center;
+      background-size: cover;
+      height: 100vh;
+      width: 100%;
+    }
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    .feature {
+      flex: 1 1 calc(50% - 20px);
+      min-width: 280px;
+      margin-bottom: 20px;
+    }
+    .gallery img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+    .contact-form button {
+      background-color: #2d6a4f;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+    }
+    .cta {
+      text-align: center;
+      padding: 40px 20px;
+      background-color: #e1f3e8;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #2d6a4f;
+      color: white;
+    }
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+      nav {
+        flex-direction: column;
+      }
+      .feature {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div style="display: flex; align-items: center; gap: 10px;">
+      <img src="images/icons/house.png" alt="Mothu Properties Logo" style="height: 180px;">
+      <div style="width: 30px; height: 30px; background-color: #2d6a4f; border-top-right-radius: 100% 80%; border-bottom-left-radius: 100% 80%;"></div>
+    </div>  
+    <div>
+      <h1>Secure & Affordable Land </h1>
+      <p> Your Family's Future</p>
+    </div>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#plots">Available Plots</a>
+    <a href="#about">About Us</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="home" class="hero-modern" style="display: flex; justify-content: space-between; align-items: center; padding: 80px 40px; background: #f8f8f8;">
+    <div class="text" style="flex: 1; font-size: 2.5rem; color: #1b4332;">
+      <h1><span style="color:#2d6a4f; font-weight:bold;">Premium Land</span> for sale<br>in <span style="color:#2d6a4f; font-weight:bold;">Kookrus</span></h1>
+      <h1 style="font-size: 2rem; margin-top: 10px; color: #1b4332;">
+        from <strong style="color: #2d6a4f; font-size: 2.2rem;">R190k</strong>
+        <span style="display: inline-block; transform: rotate(90deg); color: #2d6a4f; font-size: 2rem; margin-left: 10px;"></span>
+      </h1>      
+      <h2 style="font-size: 1.5rem; margin-top: 20px;">Book a Site Visit or Get in Touch</h2>
+      <button onclick="window.location.href='https://wa.me/27664888889'" style="margin-top: 10px; background: #2d6a4f; color: white; padding: 12px 24px; border: none; cursor: pointer; font-size: 1rem;">Chat on WhatsApp</button>
+    </div>
+    <div class="image" style="flex: 1; position: relative; height: 100%;">
+      <img class="slide-image active" src="images/happy_man.png" alt="Buyer 1" style="width: 100%; position: absolute; top: 0; left: 0;">
+      <img class="slide-image" src="images/keys.png" alt="Buyer 2" style="width: 100%; position: absolute; top: 0; left: 0;">
+      <img class="slide-image" src="images/family-hero3.png" alt="Buyer 3" style="width: 100%; position: absolute; top: 0; left: 0;">
+    </div>
+    
+  </section>  
+
+  <section>
+    <h2>Why Choose Us?</h2>
+    <div class="features">
+      <div class="feature">
+        <img src="images/location.webp" alt="Prime Locations" style="width: 60px; height: 60px; border-radius: 50%;">
+        <h3>Prime Locations</h3>
+        <p>Our land is situated in fast-growing, desirable areas close to schools, shopping malls, hospitals, and public transport—perfect for building a life with your family.</p>
+      </div>
+      <div class="feature">
+        <img src="images/icons/investment.png" alt="Flexible Payment Plans" style="width: 60px; height: 60px; border-radius: 50%;">
+        <h3>Flexible Payment Plans</h3>
+        <p>We believe land ownership should be within everyone's reach. That's why we offer tailored payment plans starting from as little as R999/month, with low upfront deposits.</p>
+      </div>
+      <div class="feature">
+        <img src="images/icons/security.png" alt="Safe & Secure" style="width: 60px; height: 60px; border-radius: 50%;">
+        <h3>Safe & Secure Communities</h3>
+        <p>Our plots are in peaceful, family-friendly neighborhoods with proper infrastructure, access roads, and security features to give you peace of mind.</p>
+      </div>
+      <div class="feature">
+        <img src="images/icons/law-firm.png" alt="Legal Peace of Mind" style="width: 60px; height: 60px; border-radius: 50%;">
+        <h3>Legal Peace of Mind</h3>
+        <p>All land comes with clear title deeds and full zoning permissions. We assist you throughout the legal process to ensure your investment is protected.</p>
+      </div>
+      <div class="feature">
+        <h3>Build-Ready Plots</h3>
+        <p>No delays—our plots are fully serviced and ready for development. Start planning your dream home the moment you buy.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="plots" class="gallery">
+    <h2>Available Plots</h2>
+    <img src="images/land-map.jpeg" alt="Mothu Land Map">
+  </section>
+
+  <section id="about">
+    <h2>About Mothu Properties</h2>
+    <p>Mothu Properties isn't just about land — it's about legacy. We're a proudly South African business on a mission to empower families to secure their future through affordable land ownership. Our properties are situated in fast-developing, well-connected areas near schools, hospitals, malls, and public transport — because we believe where you live shapes how you live.
+    <br><br>
+    With us, you're not just buying land — you're investing in peace of mind, security, and the future of your loved ones. Our plots are competitively priced and build-ready, making them perfect for first-time homeowners, young families, and long-term investors alike. Every transaction is transparent, every document is verified, and every buyer is treated with care.
+    <br><br>
+    We make the journey to ownership simple with expert legal guidance, flexible payment plans starting from as little as R999/month, and one-on-one support from enquiry to key handover. Whether you're dreaming of your first home, a weekend retreat, or a long-term investment — Mothu Properties is your trusted partner every step of the way.
+    <br><br>
+    Over the years, we've helped dozens of South Africans turn open plots into homes, security, and generational assets. Our clients consistently share how simple, safe, and empowering the process was. With dedicated agents and ongoing support, you can start your journey with confidence — knowing you’re not just buying land, you're building your future with a team that cares.</p>
+  </section>
+
+  <section id="testimonials">
+    <h2>What Our Customers Say</h2>
+    <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: space-between;">
+      <div style="flex: 1 1 300px; background-color: #f5f5f5; padding: 20px; border-radius: 8px;">
+        <p>"Thanks to Mothu Properties, we finally own a piece of land we can call ours. The process was simple and transparent from start to finish!"</p>
+        <strong>- Lerato & Kabelo, Soweto</strong>
+      </div>
+      <div style="flex: 1 1 300px; background-color: #f5f5f5; padding: 20px; border-radius: 8px;">
+        <p>"Affordable pricing, honest agents, and land close to everything we need. I’m already planning to buy a second plot!"</p>
+        <strong>- Mpho, Midrand</strong>
+      </div>
+      <div style="flex: 1 1 300px; background-color: #f5f5f5; padding: 20px; border-radius: 8px;">
+        <p>"What stood out most was their support and legal clarity. I knew I was in good hands from the very first call."</p>
+        <strong>- Thabo, Alberton</strong>
+      </div>
+    </div>
+  </section>
+
+  <section id="submit-testimonial">
+    <h2>Share Your Experience</h2>
+    <form id="testimonialForm" style="max-width: 600px; margin: auto;">
+      <input type="text" name="customer" placeholder="Your Name" required style="width: 100%; padding: 10px; margin-bottom: 10px;">
+      <textarea name="testimonial" placeholder="Your Testimonial" rows="4" required style="width: 100%; padding: 10px; margin-bottom: 10px;"></textarea>
+      <button type="submit" style="background-color: #2d6a4f; color: white; padding: 10px 20px; border: none; cursor: pointer;">Submit Testimonial</button>
+    </form>
+    <div id="testimonialList" style="margin-top: 30px; display: flex; flex-wrap: wrap; gap: 20px; justify-content: space-between;"></div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <div class="contact-form">
+      <form id="contactForm">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <section id="map">
+    <h2>Visit Our Site</h2>
+    <p>122 Main Road, Walkerville, 1876</p>
+    <div style="width: 100%; height: 400px;">
+      <iframe
+        width="100%"
+        height="100%"
+        frameborder="0"
+        style="border:0"
+        src="https://www.google.com/maps?q=122+Main+Road+Walkerville+1876&output=embed"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </section>
+
+  <section class="cta">
+    <h2>Book a Site Visit or Get in Touch</h2>
+    <p>Message us on WhatsApp now to learn more.</p>
+    <button onclick="window.location.href='https://wa.me/27664888889'">Chat on WhatsApp</button>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Mothu Properties. All rights reserved.</p>
+    <p>Phone/WhatsApp: 066 488 8889 | Email: info@mothuproperties.co.za</p>
+  </footer>
+
+  <script>$1
+
+  // Testimonial Form
+  const testimonialForm = document.getElementById('testimonialForm');
+  const testimonialList = document.getElementById('testimonialList');
+
+  function loadTestimonials() {
+    const testimonials = JSON.parse(localStorage.getItem('mothu_testimonials') || '[]');
+    testimonialList.innerHTML = testimonials.map(t => `
+      <div style="flex: 1 1 300px; background-color: #f5f5f5; padding: 20px; border-radius: 8px;">
+        <p>"${t.testimonial}"</p>
+        <strong>- ${t.customer}</strong>
+      </div>
+    `).join('');
+  }
+
+  testimonialForm.addEventListener('submit', function (e) {
+    e.preventDefault();
+    const newTestimonial = {
+      customer: this.customer.value,
+      testimonial: this.testimonial.value,
+      timestamp: new Date().toISOString()
+    };
+    const testimonials = JSON.parse(localStorage.getItem('mothu_testimonials') || '[]');
+    testimonials.push(newTestimonial);
+    localStorage.setItem('mothu_testimonials', JSON.stringify(testimonials));
+    this.reset();
+    loadTestimonials();
+    alert('Thank you for sharing your feedback!');
+  });
+
+  loadTestimonials();
+</script>
+</body>
+</html>
